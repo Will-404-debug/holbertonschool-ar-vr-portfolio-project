@@ -43,3 +43,6 @@ This allows researchers to **visualize, explore, and manipulate molecular struct
 ---
 
 ✍️ *This project integrates the global PDB database into VR workflows, bringing molecular research closer to immersive technologies.*
+
+**© William K. Guilon Dronnier**
+ 

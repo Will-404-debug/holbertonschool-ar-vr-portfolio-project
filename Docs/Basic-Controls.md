@@ -63,3 +63,5 @@ UnityMolX uses **OpenXR** with custom scripts to enable both scientific accuracy
 ---
 
 ✍️ *These controls form the foundation of UnityMolX VR interaction.*
+
+**© William K. Guilon Dronnier**

@@ -79,7 +79,7 @@ holbertonschool-ar-vr-portfolio-project/
    git clone https://github.com/Will-404-debug/holbertonschool-ar-vr-portfolio-project.git
    ```
 2. Navigate to the `Builds/` folder.  
-3. Unzip the folder and  run the executable for your platform.  
+3. Click on UnityMolX-*Your Operating System*.txt, then click on the link download the .zip, unzip the folder and run the executable.  
 
 ---
 
@@ -91,5 +91,6 @@ PS: more to come (be patient)
 ---
 
 ## 👤 Author
-**William K. Guilon Dronnier** 
+**William K. Guilon Dronnier**
 Holberton School – AR/VR Specialization
+
