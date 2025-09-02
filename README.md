@@ -10,7 +10,7 @@ Instead, it relies on a **custom molecular raycasting algorithm** that directly 
 ---
 
 ## 🛠️ Technologies Used
-- Unity  
+- Unity 2021.3.45f1
 - XR Interaction Toolkit (XRI) 3.2.0  
 - OpenXR  
 - Unity Input System  
