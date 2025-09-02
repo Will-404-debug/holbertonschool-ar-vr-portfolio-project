@@ -93,7 +93,7 @@ holbertonschool-ar-vr-portfolio-project/
 ---
 
 ## 📓 Devlogs
-I documented my development progress in a LinkedIn post:  
+I documented my development progress in LinkedIn posts:  
 👉 [Read my Devlog #0](https://www.linkedin.com/pulse/unitymolx-vr-devlog-0-first-steps-scientific-william-guilon-dronnier-rh7ue/?trackingId=NOumVZNI%2BGdLEe6Zh5lsfw%3D%3D)
 
 👉 [Read my Devlog #1](https://www.linkedin.com/pulse/unitymolx-vr-devlog-1-william-guilon-dronnier-gxgle/)
