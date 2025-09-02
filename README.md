@@ -30,15 +30,11 @@ Instead, it relies on a **custom molecular raycasting algorithm** that directly 
 ```plaintext
 holbertonschool-ar-vr-portfolio-project/
 │
-├── Builds/                # Unity build (Windows (for now))
+├── Builds/                   # Unity build (Windows (for now))
 │
-├── Scripts/               # Custom scripts I created to integrate OpenXR
-│   ├── AtomLineVisualOverride.cs
-│   ├── AtomRayInteractor.cs
-│   ├── TwoHandGrabScaler.cs
-│   ├── UIRayInteractorToggle.cs
+├── VR_XRI_OpenXR_minimal/    # Folder with the main project
 │
-├── Docs/                  # Optional docs and images
+├── Docs/                     # Optional docs and images
 │
 └── README.md
 ```
@@ -47,29 +43,42 @@ holbertonschool-ar-vr-portfolio-project/
 
 ## ✨ Custom Scripts
 
-### `AtomLineVisualOverride.cs`
-- Customizes the XR line visual.  
-- Dynamically adjusts **line length** and **color gradient** depending on selection state.  
-- Provides visual feedback when targeting atoms.
-
 ### `AtomRayInteractor.cs`
-- Extended `XRRayInteractor` that implements **custom atom raycasting** logic.  
-- Does **not** rely on Unity’s default **collider-based raycast**.  
-- Instead, it integrates with **UnityMol’s custom raycast system**, which calculates hits directly on molecular data.  
-- Tracks hit positions (`CurrentHitPosition`, `SelectionHitPosition`).  
+- Extended `XRRayInteractor` that implements **custom atom raycasting** logic.
+- Does **not** rely on Unity’s default **collider-based raycast**.
+- Instead, it integrates with **UnityMol’s custom raycast system**, which calculates hits directly on molecular data.
+- Tracks hit positions (`CurrentHitPosition`, `SelectionHitPosition`).
 - Ensures only valid molecule atoms can be hovered/selected.
 
 ### `TwoHandGrabScaler.cs`
-- Implements **two-hand grab interactions** for molecular models.  
-- Supports **rotation** when no triggers are pressed, and **scaling** when triggers are pressed.  
-- Integrates with **APIPython** for global molecule scaling.  
-- Falls back to direct local scaling if APIPython is disabled.  
+- Implements **two-hand grab interactions** for molecular models.
+- Supports **rotation** when no triggers are pressed, and **scaling** when triggers are pressed.
+- Integrates with **APIPython** for global molecule scaling.
+- Falls back to direct local scaling if APIPython is disabled.
 - Handles input via Unity’s **Input System** with fallback to XR device triggers.
 
 ### `UIRayInteractorToggle.cs`
-- Toggles between **UI ray interaction** and **Atom ray interaction**.  
-- Uses `GraphicRaycaster` to detect if the ray is hovering over UI elements.  
-- Prevents conflicts between UI input and molecular ray interaction.  
+- Toggles between **UI ray interaction** and **Atom ray interaction**.
+- Uses `GraphicRaycaster` to detect if the ray is hovering over UI elements.
+- Prevents conflicts between UI input and molecular ray interaction.
+
+### `ControllerHelpToggleXR.cs`
+- Manages **Controller Help UI** in VR.
+- Allows toggling an in-VR guide that shows controller button bindings.
+- Uses input actions to display contextual help panels.
+
+### `QuitButton.cs`
+- Provides a safe **quit button** inside VR.
+- Lets the user exit UnityMolX directly from the in-game UI without removing the headset.
+
+### `StartupHint.cs`
+- Displays a **popup hint** when the application starts.
+- Reminds the user to press the menu button on the left controller to toggle controller help.
+- Always follows the main camera for visibility.
+
+### `StickyHintFollowHead.cs`
+- Makes UI elements (like Controller Help panels) **follow the player’s head movement**.
+- Ensures hints stay visible in the VR field of view.
 
 ---
 
