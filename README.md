@@ -21,7 +21,7 @@ Instead, it relies on a **custom molecular raycasting algorithm** that directly 
 
 ## 📋 Requirements
 - A **VR headset connected to your PC** (tested with Meta Quest 3 + OpenXR).  
-- A PC capable of running Unity VR builds.  
+- A PC capable of running Unity VR builds → **minimum**: GPU such as an NVIDIA GTX 1060 or AMD Radeon RX 480 or better, a CPU like an Intel i5-4590 or AMD Ryzen 5 1500X or greater, at least 8GB of RAM, a compatible HDMI 1.3 video output, and at least one USB 3.0 port.
 - Please read the **`Docs/`** folder for usage instructions, since UnityMolX is **scientifically centered**.
 
 ---
