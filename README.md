@@ -32,7 +32,7 @@ holbertonschool-ar-vr-portfolio-project/
 │
 ├── Builds/                   # Unity build (Windows (for now))
 │
-├── VR_XRI_OpenXR_minimal/    # Folder with the main project
+├── VR_XRI_OpenXR_minimal/    # Folder to request view for the code
 │
 ├── Docs/                     # Optional docs and images
 │
